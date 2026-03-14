@@ -1,0 +1,291 @@
+@media (max-width: 768px) {
+
+  .home-page,
+  .about-page,
+  .skills-page,
+  .projects-page,
+  .contact-page {
+    padding: 64px 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 600px;
+  }
+
+  .about-page {
+    height: 1000px;
+  }
+
+  .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+  }
+
+  .home-pic,
+  .about-pic {
+    height: 340px;
+    width: 340px;
+    margin: 0;
+  }
+
+  .home-pic:hover,
+  .about-pic:hover {
+    height: 340px;
+    width: 340px;
+  }
+
+  .home-content {
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: auto;
+    max-height: 1000px;
+    margin: 10px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: auto;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .about-pic {
+    margin-bottom: 15px;
+  }
+
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 20px 0;
+    
+    height: 320px;
+    width: 340px;
+    gap: 10px;
+  }
+
+  .about-cards:hover {
+    height: 320px;
+    width: 340px;
+
+    margin-top: 20px;
+  }
+
+  .left-card,
+  .right-card {
+    height: 155px;
+    width: 340px;
+  }
+
+  .left-card:hover,
+  .right-card:hover {
+    height: 155px !important;
+    width: 340px !important;
+  }
+
+  .left-card-title,
+  .right-card-title {
+    padding: 5px;
+  }
+
+  .left-card-text,
+  .right-card-text {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+  }
+
+  .about-text {
+    text-align: justify;
+    width: 340px;
+    padding: 0 10px;
+  }
+
+/* 1. Ajuste do container para Grid 2x2 */
+  .skill-cards {
+    display: grid;
+    /* Cria duas colunas de tamanhos iguais */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    width: 100%;
+    max-width: 340px; /* Alinha com a largura que você já usa no mobile */
+    margin: 0 auto;
+  }
+
+  /* 2. Transformando os cards em quadrados menores */
+  .first-card, .second-card, .third-card, .fourth-card {
+    height: 160px; /* Altura igual à largura aproximada */
+    width: 100%;   /* Ocupa a largura da coluna do grid */
+    filter: grayscale(0%); /* Opcional: remove o grayscale no mobile ja que não há hover */
+    padding: 10px;
+    box-sizing: border-box;
+    
+    /* Resetando possíveis conflitos do desktop */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 3. Ajuste das logos para caberem no quadrado */
+  .cpp-logo, .git-logo, .html-logo, .css-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .css-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+
+  .first-card-text, .second-card-text, .third-card-text, .fourth-card-text {
+    font-size: 16px;
+    padding: 10px 0 0 0;
+  }
+
+  .first-card:hover, .second-card:hover, .third-card:hover, .fourth-card:hover {
+    height: 160px !important;
+    width: 100% !important;
+    transform: none !important;
+  }
+
+  .projects-container {
+    width: 340px; /* Alinhado com a largura dos cards de About e Skills */
+    margin: 20px auto;
+  }
+
+  /* Redução do padding interno para o texto não ficar muito apertado */
+  .project-card {
+    padding: 15px;
+    min-height: 350px; /* Ajuste conforme o tamanho do seu texto */
+    min-width: 100%;
+    gap: 5px;
+  }
+
+  /* Ajuste crucial: a imagem estava com 340px de altura, o que é muito para mobile */
+  .project-card img {
+    height: 200px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Ajuste dos botões de navegação para não sobreporem o conteúdo */
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  .left,
+  .right {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left:hover,
+  .right:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .left {
+    left: -25px;
+  }
+
+  .right {
+    right: -25px;
+  }
+
+  /* Ajuste das fontes dos projetos no mobile */
+  .project-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .bottom-end {
+    width: 80%;
+    height: 400px;
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .bottom-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+
+  .bottom-pic:hover {
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .bottom-logos {
+    display: flex;
+    gap: 15px;
+  }
+
+  .git-img,
+  .insta-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+}

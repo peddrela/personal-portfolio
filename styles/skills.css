@@ -9,6 +9,13 @@
   justify-content: top;
 }
 
+.skill-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
 
 .first-card,
 .second-card,
@@ -23,6 +30,7 @@
   padding: 10px;
   transition: 0.8s;
   filter: grayscale(100%);
+
 }
 
 .first-card:hover,
