@@ -1,0 +1,106 @@
+.about-page {
+  height: 600px;
+  width: auto;
+  margin: 0 auto;
+  padding-top: 80px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-lower {
+  margin: 0;
+  width: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-pic {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+
+  margin-right: 20px;
+  border-radius: 50px;
+  transition: 0.7s;
+}
+
+.about-pic:hover {
+  width: 410px;
+  height: 410px;
+}
+
+
+.about-cards {
+  position: relative;
+  width: 600px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+.left-card,
+.right-card {
+  height: 160px;
+  width: 280px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.7s;
+}
+
+.left-card:hover,
+.right-card:hover {
+  height: 170px;
+}
+
+.left-card {
+  background-color: white;
+  color: black;
+}
+
+.right-card {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+.left-card-title,
+.left-card-text,
+.right-card-title,
+.right-card-text {
+  font-family: Poppins, "Arial";
+
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.left-card-title,
+.right-card-title{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.about-text {
+  height:100px;
+  width: 600px;
+
+  text-align: center;
+
+  color: white;
+  margin-top: 15px;
+  margin-left: 0;
+  font-size: 19px;
+}

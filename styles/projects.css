@@ -1,0 +1,66 @@
+.projects-page {
+  flex-direction: column; 
+  justify-content: flex-start; 
+  padding-top: 140px;
+}
+
+.projects-container{
+  position: relative;
+  width: 550px;
+  margin: 30px auto;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carousel{
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.project-card{
+  min-width: 100%; /* Garante que cada card ocupe 100% do wrapper (um por vez) */
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.project-card img{
+  width: 100%;
+  height: 340px; /* Altura fixa para manter o padrão */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.carousel-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.3s;
+}
+
+.carousel-btn:hover {
+  color: #38bdf8;
+}
+
+.left{
+  left: -60px;
+}
+
+.right{
+  right: -60px;
+}

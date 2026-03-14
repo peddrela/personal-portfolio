@@ -1,0 +1,78 @@
+.skills-page {
+  height: 600px;
+  width: auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+
+.first-card,
+.second-card,
+.third-card,
+.fourth-card {
+  height: 400px;
+  width: 210px;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: rgb(33, 33, 33);
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.8s;
+  filter: grayscale(100%);
+}
+
+.first-card:hover,
+.second-card:hover,
+.third-card:hover,
+.fourth-card:hover {
+  transform: scale(1.1) rotate(0deg) translate(0px, 0px) skewX(0deg);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  filter: brightness(1);
+  background-color: #667eea;
+  color: #ffffff;
+
+  height: 410px;
+  width: 220px;
+
+  color: black;
+  background-color: white;
+
+
+  filter: grayscale(0%);
+}
+
+.first-card-title,
+.second-card-title,
+.third-card-title,
+.fourth-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.first-card-text,
+.second-card-text,
+.third-card-text,
+.fourth-card-text {
+  padding: 40px 3px 0 3px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.cpp-logo,
+.git-logo,
+.html-logo,
+.css-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+}
