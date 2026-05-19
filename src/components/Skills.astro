@@ -1,0 +1,79 @@
+---
+import "../styles/skills.css"
+---
+
+<section id="skills" class="skills-page">
+    <div class="upper">
+      <div class="subtitle">
+        Explore My
+      </div>
+      <div class="title">
+        Skills
+      </div>
+    </div>
+    <div class="container">
+      <div class="skill-cards">
+        <div class="card">
+          <div class="card-title">
+            <img class="cpp-logo" src="logos/c++.svg">
+          </div>
+          <div class="card-text">
+            C++
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img class="git-logo" src="logos/git.svg">
+          </div>
+          <div class="card-text">
+            GIT
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img class="html-logo" src="logos/html5.svg">
+          </div>
+          <div class="card-text">
+            HTML
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img class="css-logo" src="logos/css.svg">
+          </div>
+          <div class="card-text">
+            CSS
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img class="js-logo" src="logos/javascript.svg">
+          </div>
+          <div class="card-text">
+            JAVASCRIPT
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <img class="astro-logo" src="logos/astro.svg">
+          </div>
+          <div class="card-text">
+            ASTRO
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 768px) {
+    .skill-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .first-card, .second-card, .third-card, .fourth-card {
+      width: 280px;
+      height: 350px;
+    }
+  }
+</style>

@@ -1,0 +1,41 @@
+---
+import "../styles/header.css"
+---
+
+<nav>
+    <div class="logo">Pedro Guzzo</div>
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const links = document.querySelectorAll('.nav-links li a');
+
+  function toggleMenu () {
+    menuToggle?.classList.toggle('active');
+    navLinks?.classList.toggle('active');
+  }
+
+  menuToggle?.addEventListener('click', toggleMenu);
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+       menuToggle?.classList.remove('active');
+       navLinks?.classList.remove('active');
+    })
+  });
+</script>
