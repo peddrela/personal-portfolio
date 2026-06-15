@@ -65,7 +65,7 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1054px) {
   nav {
     padding: 15px 25px;
     width: 70%;
@@ -112,7 +112,7 @@ nav {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%; /* Começa escondido totalmente para a direita fora da tela */
+    right: -150%; /* Começa escondido totalmente para a direita fora da tela */
     width: 50%;   /* Ocupa 70% da largura da tela */
     height: 100vh; /* Ocupa toda a altura da tela */
     background: rgba(15, 15, 26, 0.95); /* Fundo escuro combinando com seu gradiente */
@@ -130,7 +130,8 @@ nav {
 
   /* --- 4. EXIBIÇÃO DO MENU (Quando ativo) --- */
   .nav-links.active {
-    right: -40px; /* Desliza para dentro da tela ocupando seu espaço */
+    right: -120px; /* Desliza para dentro da tela ocupando seu espaço */
+    height: 100vh;
   }
 
   .nav-links li a {
@@ -139,7 +140,7 @@ nav {
 }
 
 /* Esconde o botão hambúrguer no Desktop para não quebrar o layout */
-@media (min-width: 769px) {
+@media (min-width: 1055px) {
   .menu-toggle {
     display: none;
   }

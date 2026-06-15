@@ -26,7 +26,8 @@
   min-width: 100%; /* Garante que cada card ocupe 100% do wrapper (um por vez) */
   box-sizing: border-box;
   padding: 20px;
-  background-color: var(--glass-bg);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-bg);
   border-radius: 15px;
   text-align: center;
   color: var(--text-main);
