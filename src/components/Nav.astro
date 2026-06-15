@@ -1,40 +1,51 @@
 <nav>
-    <div class="logo">Pedro Guzzo</div>
+  <div class="logo">Pedro Guzzo</div>
 
-    <button class="menu-toggle" aria-label="Abrir menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+  <button class="menu-toggle" aria-label="Abrir menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <script>
   // Código envelopado corretamente para o Astro compilar de forma isolada
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links li a');
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li a");
 
     if (menuToggle && navLinks) {
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        navLinks.classList.toggle("active");
       });
 
-      links.forEach(link => {
-        link.addEventListener('click', () => {
-          menuToggle.classList.remove('active');
-          navLinks.classList.remove('active');
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          menuToggle.classList.remove("active");
+          navLinks.classList.remove("active");
         });
       });
     }
   });
 </script>
+
+<style>
+  @media (max-width: 1054px) {
+    nav {
+      top: 10px;
+      left: 50%;
+      transform: translateX(translateX(-50%));
+      width: 90%;
+    }
+  }
+</style>
