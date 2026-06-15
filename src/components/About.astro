@@ -1,73 +1,68 @@
-  <section id="about" class="about-page">
-    <div class="upper">
-      <div class="subtitle">
-        Get To Know More
-      </div>
-      <div class="title">
-        About Me
-      </div>
-    </div>
-    <div class="container">
-        <img class="about-pic" src="personal-portfolio/cards-pics/project-pics.jpeg">
-        <div class="about-container">
-          <div class="about-cards">
-            <div class="left-card">
-              <div class="left-card-title">
-                Experience
-              </div>
-              <div class="left-card-text">
-                Co-founder of Junior Enterprise PotiCode.
-              </div>
-            </div>
-            <div class="right-card">
-              <div class="right-card-title">
-                Education
-              </div>
-              <div class="right-card-text">
-                Computer Science 2nd year student.
-              </div>
-            </div>
-          </div>
-          <div>
-            <a href="https://github.com/peddrela" target="_blank">
-              <button class="about-button">Acess GitHub</button>
-            <a/>
+<section id="about" class="about-page">
+  <div class="upper">
+    <div class="subtitle">Get To Know More</div>
+    <div class="title">About Me</div>
+  </div>
+  <div class="container">
+    <img
+      class="about-pic"
+      src="/personal-portfolio/cards-pics/project-pics.jpeg"
+    />
+    <div class="about-container">
+      <div class="about-cards">
+        <div class="left-card">
+          <div class="left-card-title">Experience</div>
+          <div class="left-card-text">
+            Co-founder of Junior Enterprise PotiCode.
           </div>
         </div>
+        <div class="right-card">
+          <div class="right-card-title">Education</div>
+          <div class="right-card-text">Computer Science 2nd year student.</div>
+        </div>
+      </div>
+      <div>
+        <a href="https://github.com/peddrela" target="_blank">
+          <button class="about-button">Acess GitHub</button>
+          <a></a>
+        </a>
+      </div>
     </div>
-</section>
+  </div>
 
-<style>
-@media (max-width: 1054px) {
-    .about-page {
-      height: 1000px;
+  <style>
+    @media (max-width: 1054px) {
+      .about-page {
+        height: 1000px;
+      }
+      .about-pic {
+        height: 340px;
+        width: 340px;
+        margin: 0;
+      }
+      .about-pic:hover {
+        height: 340px;
+        width: 340px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        max-height: 1000px;
+        margin: 10px;
+      }
+      .about-cards {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .left-card,
+      .right-card {
+        width: 280px;
+        height: 150px;
+      }
     }
-    .about-pic {
-      height: 340px;
-      width: 340px;
-      margin: 0;
-    }
-    .about-pic:hover {
-      height: 340px;
-      width: 340px;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: auto;
-      max-height: 1000px;
-      margin: 10px;
-    }
-    .about-cards {
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 20px;
-    }
-    .left-card, .right-card {
-      width: 280px;
-      height: 150px;
-    }
-  }
-</style>
+  </style>
+</section>
