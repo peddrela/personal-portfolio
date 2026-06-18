@@ -1,43 +1,92 @@
-# Astro Starter Kit: Minimal
+<div align="center">
 
-```sh
-npm create astro@latest -- --template minimal
+# 🧑‍💻 Pedro Guzzo — Portfolio Pessoal
+
+**Meu espaço na web. Projetos, habilidades e um pouco sobre mim.**
+
+[![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+🌐 **[peddrela.github.io/personal-portfolio](https://peddrela.github.io/personal-portfolio)**
+
+</div>
+
+---
+
+## 🚀 Sobre o projeto
+
+Portfolio pessoal desenvolvido com **Astro** e hospedado gratuitamente no **GitHub Pages**, com deploy automático a cada push na branch `main` via **GitHub Actions**.
+
+O site reúne minha apresentação, habilidades técnicas e projetos desenvolvidos ao longo da minha jornada como estudante de Ciência da Computação.
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia     | Uso                                            |
+| -------------- | ---------------------------------------------- |
+| Astro          | Framework principal — geração de site estático |
+| CSS            | Estilização e layout                           |
+| GitHub Actions | CI/CD — deploy automático                      |
+| GitHub Pages   | Hospedagem gratuita                            |
+
+---
+
+## 📁 Estrutura do projeto
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
+personal-portfolio/
+├── .github/
+│   └── workflows/       # Pipeline de deploy automático
+├── public/              # Arquivos estáticos (imagens, favicon)
 ├── src/
+│   ├── components/      # Componentes reutilizáveis .astro
 │   └── pages/
-│       └── index.astro
+│       └── index.astro  # Página principal
+├── astro.config.mjs     # Configuração do Astro + GitHub Pages
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## ⚙️ Como rodar localmente
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+# 1. Clone o repositório
+git clone https://github.com/peddrela/personal-portfolio.git
+cd personal-portfolio
 
-## 🧞 Commands
+# 2. Instale as dependências
+npm install
 
-All commands are run from the root of the project, from a terminal:
+# 3. Inicie o servidor de desenvolvimento
+npm run dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+O site estará disponível em `http://localhost:4321`.
 
-## 👀 Want to learn more?
+### Outros comandos úteis
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando           | Ação                              |
+| ----------------- | --------------------------------- |
+| `npm run build`   | Gera o site estático em `./dist/` |
+| `npm run preview` | Pré-visualiza o build localmente  |
+
+---
+
+## 🔄 Deploy
+
+O deploy é feito automaticamente via **GitHub Actions** toda vez que há um push na branch `main`. O site é publicado no GitHub Pages em:
+
+> **https://peddrela.github.io/personal-portfolio**
+
+Nenhuma configuração manual é necessária.
+
+---
+
+<div align="center">
+
+Feito por [Pedro Guzzo](https://github.com/peddrela)
+
+</div>
