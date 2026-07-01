@@ -6,5 +6,5 @@ export default defineConfig({
   site: 'https://peddrela.github.io', 
   
   // Coloque o nome exato do seu repositório entre barras aqui:
-  base: '/personal-portfolio', 
+  base: '/portfolio', 
 });
